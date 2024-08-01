@@ -1,9 +1,5 @@
 from dash import Dash, html
 import dash_bootstrap_components as dbc
-import dash
-import sys
-
-from prometheus_flask_exporter import PrometheusMetrics
 
 
 dash_app = Dash(
