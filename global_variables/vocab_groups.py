@@ -1,8 +1,8 @@
-import requests
+# import requests
 
-resp = requests.get("http://spidsmus.sdma.nzcorp.net:9090/termite/toolkit/vocinfo.api")
-a = resp.json()
-keys_all = a.keys()
+# resp = requests.get("http://spidsmus.sdma.nzcorp.net:9090/termite/toolkit/vocinfo.api")
+# a = resp.json()
+# keys_all = a.keys()
 voc_groups = {
     "Animal health and nutrition": "ANIMALFEED,BIOAG",
     "Food and beverage": "FOODBEV,FOODSENSORY,MICRONUTRIENTS,FOODON",
