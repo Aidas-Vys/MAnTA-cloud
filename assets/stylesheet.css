@@ -1,0 +1,214 @@
+
+
+.dash-table-tooltip {
+    background-color: rgb(210, 220, 220) !important;
+    color: rgb(0, 0, 0);
+    width:500px !important;
+    max-width: 1000px !important;
+    white-space: normal;
+    height: auto !important;
+    /* max-height: 500px !important; */
+    position:absolute  !important;
+    overflow-x: hidden !important;
+    overflow-y:hidden !important;
+    text-overflow: ellipsis;
+
+
+}
+
+/* .dash-spreadsheet td div{
+    line-height: 15px;
+    max-height: 200px;
+    white-space: normal;
+    display: inline-block;
+} */
+
+/* div.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner .column-header-name {
+    margin-left: unset;
+    color: rgb(255, 255, 255);     
+} */
+
+.overlay{
+    background-color:rgb(34, 34, 34);
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+    z-index:500;
+    background-image: url(darkhex2.jpg);
+    font-family: monospace;
+    overflow:scroll;
+}
+
+pre{
+    overflow: initial !important;
+}
+
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner td div.dash-cell-value.cell-markdown, .dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner th div.dash-cell-value.cell-markdown, 
+.column-header-name div.dash-table-container{
+    text-align: left;
+    font-family: monospace !important;
+    font-size: medium;
+    display: inline-block;
+    color: rgb(255, 255, 255);   
+    white-space: normal;
+    /* background-color: rgba(0, 0, 0, 0.7) !important; */
+}
+
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+    font-family: monospace !important;
+    color: white;
+    white-space: normal;
+}
+
+._dash-loading-callback {
+  font-family: monospace;
+  padding-top: 50px;
+  color: rgb(90, 90, 90);
+  
+  /* The banner */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  cursor: progress;
+
+  opacity: 0;
+  background-color: rgb(250, 250, 250);
+  /* Delay animation by 1s to prevent flashing 
+     and smoothly transition the animation over 0.5s 
+   */
+  -moz-animation: fadein 0.5s ease-in 1s forwards; /* Firefox */
+  -webkit-animation: fadein 0.5s ease-in 1s forwards; /* Safari and Chrome */
+  -o-animation: fadein 0.5s ease-in 1s forwards; /* Opera */
+    animation: fadein 0.5s ease-in 1s forwards;
+}
+
+
+
+body {
+    color: white;
+}
+
+.Select-menu-outer {
+    color: black !important;
+}
+
+/* .container{
+    background-color: rgba(0, 0, 0, 0.7) !important;
+} */
+
+.content_style{
+    background-color:rgb(0,0,0,0.50);
+    margin-top:1rem;
+    margin-left:1vh;
+    margin-right:1vh;
+    min-width:auto;
+    /* min-height: fit-content; */
+    max-height: 95vw;
+}
+
+.landing_page{
+    background-color:rgb(0,0,0,0.50);
+    margin-top:40vh;
+    margin-bottom:10vh;
+}
+
+
+.dash-graph{
+    /* max-height: 95vh; */
+    /* min-height: 45vh; */
+    overflow: auto;
+    max-width: 200%;
+    /* width: calc(); */
+}
+
+
+/* #topic_overview > div > div > div > div{
+    min-height: auto;
+}
+#topic_overview_scopus > div > div > div:nth-child(3) > div{
+    min-height: auto;
+
+}
+#topic_overview_scopus > div > div > div:nth-child(2) > div{
+    min-height: auto;
+} */
+
+#timeline_graph > div.js-plotly-plot > div > div{
+    min-height: 75vh;
+    max-height: 95vh;
+}
+#timeline_graph_scopus > div.js-plotly-plot > div > div{
+    min-height: 75vh;
+    max-height: 95vh;
+}
+/* #concepts-bar_scopus > div.js-plotly-plot > div > div{
+    min-height: 55vh;
+} */
+#concepts-bar_scopus > div.js-plotly-plot{
+    min-height: 55vh;
+}
+
+#concepts-bar > div.js-plotly-plot{
+    min-height: 55vh;
+}
+.tooltip-inner {
+    max-width: 600px;
+    padding: .25rem .5rem;
+    color: #000000;
+    /* text-align: center; */
+    background-color: rgb(255, 187, 0);
+    border-radius: .25rem;
+}
+
+.show-hide{
+    display: none;
+}
+
+.row{
+    margin-right: auto;
+}
+
+td.dash-select-cell{
+    background-color: crimson !important;
+}
+
+.document_collection_label{
+    font-style: italic;
+    font-size: 150%;
+    background: crimson;
+    margin-left: 0.75rem;
+    width: auto;
+    max-width: fit-content;
+    white-space: normal;
+}
+.synonym_display_text{
+    font-weight: bold;
+    font-size:150%;
+    white-space: normal;
+}
+
+/* this one below may allow to make the graph widt scrollable for larger things
+ */
+/* #concepts-bar_scopus > div.js-plotly-plot{
+    width: max-content;
+    max-width: 200%;
+} */
+.dash-spreadsheet-inner table {
+    --text-color: #ffffff !important; 
+    --hover: rgba(255, 181, 181, 0.793) !important;
+	    }
