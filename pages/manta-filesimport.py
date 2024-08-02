@@ -161,13 +161,13 @@ def make_front(ts, table_data):
     else:
         if table_data is None:
             return "", ""
-        elif "ExceptionError" in table_data[0].keys():
-            return html.Div("Exception Error occured, check the file and try again"), ""
-        elif "NoneError" in table_data[0].keys():
-            return (
-                html.Div("Incorrect file format - try .csv, .xlsx or .xls formats"),
-                "",
-            )
+        # elif "ExceptionError" in table_data[0].keys():
+        #     return html.Div("Exception Error occured, check the file and try again"), ""
+        # elif "NoneError" in table_data[0].keys():
+        #     return (
+        #         html.Div("Incorrect file format - try .csv, .xlsx or .xls formats"),
+        #         "",
+        #     )
         else:
             cols = table_data[0]
             table_lay = html.Div(
