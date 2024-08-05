@@ -10,10 +10,14 @@ import re
 from openai import AzureOpenAI
 import tiktoken
 
+scopus_key = os.environ.get("SCOPUS_API_KEY")
+scopus_token = os.environ.get("SCOPUS_TOKEN")
+pb.scopus.create_config(keys=[scopus_key], insttoken=scopus_token)
+pb.scopus.init()
+
 
 def Find_in_scopus(query: str):
     try:
-        pb.scopus.init(config_dir="config.ini")
         a = pb.scopus.ScopusSearch(query)
         if a.results is None:
             return DataFrame([{"None error": "None Error"}])
